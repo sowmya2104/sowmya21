@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fingerprint Feature Extraction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            display: inline-block;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fingerprint Feature Extraction</h1>
+    <p>Click the button below to start fingerprint feature extraction.</p>
+    
+    <button onclick="extractFingerprint()">Start Extraction</button>
+
+    <div id="output">
+        <h3>Extracted Features:</h3>
+        <p id="features">No features extracted yet.</p>
+    </div>
+
+    <script>
+        // Placeholder function for fingerprint extraction
+        function extractFingerprint() {
+            // Simulate feature extraction
+            let features = "Minutiae points: 45, Ridge count: 35, Core: Yes, Delta: Yes";
+            
+            // Output the simulated features to the screen
+            document.getElementById("features").innerText = features;
+        }
+    </script>
+
+</body>
+</html>
